@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Raphael Materiais de Construção - Página Inicial</title>
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+ 
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+
+    .search-form {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-form input[type="text"] {
+      width: 200px;
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    .search-form input[type="submit"] {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+
+    .photo-section {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .photo-section .photo {
+      flex: 0 0 20%;
+      margin: 10px;
+    }
+
+    .photo-section .photo img {
+      width: 100%;
+      height: auto;
+    }
+
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .budget-form input[type="text"],
+    .budget-form textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .budget-form input[type="submit"] {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+  
+    @media screen and (max-width: 768px) {
+      .photo-section .photo {
+        flex: 0 0 45%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .photo-section .photo {
+        flex: 0 0 100%;
+      }
+    }
+    nav {
+      background-color: #eee;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    h1 { text-align: center;}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="search-form">
+      <input type="text" placeholder="Pesquisar...">
+      <input type="submit" value="Pesquisar">
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Pagina Inicial</a>
+    <a href="localizado.html">Onde Estamos Localizados</a>
+  </nav>
+  <main>
+    <h1>Marcas Parceiras</h1>
+    <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, vitae. Tempore atque ad soluta debitis sed. Illum repellendus assumenda, porro rerum facere quibusdam eligendi optio architecto libero, id itaque unde!</h3>
+    <div class="photo-section">
+        <div class="row">
+          <div class="photo">
+            <img src="imagem/marca.avif" alt="Material 1">
+          </div>
+          <div class="photo">
+            <img src="imagem/marca1.avif" alt="Material 2">
+          </div>
+          <div class="photo">
+            <img src="imagem/marca2.avif" alt="Material 3">
+          </div>
+          <div class="photo">
+            <img src="imagem/marca3.avif" alt="Material 4">
+          </div>
+         
+    </main>
+  
+
+  <footer>
+    <div class="budget-form">
+      <form action="processar_orcamento.php" method="post">
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="text" name="email" placeholder="E-mail">
+        <textarea name="mensagem" placeholder="Mensagem"></textarea>
+        <input type="submit" value="Enviar Orçamento">
+      </form>
+    </div>
+    <p>Todos os direitos reservados &copy; 2023 Loja Raphael Material de Construção</p>
+  </footer>
+</body>
+</html>

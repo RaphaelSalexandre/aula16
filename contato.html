@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Raphael Materiais de Construçãoo - Contato</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    .contact-form {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .contact-form input[type="text"]
+    .contact-form textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+        
+    header {
+      background-color: #494444;
+      color: #fff;
+      padding: 20px;
+    }
+
+    
+    .search-form {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-form input[type="text"] {
+      width: 200px;
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    .search-form input[type="submit"] {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+   
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .budget-form input[type="text"],
+    .budget-form textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .budget-form input[type="submit"] {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+   
+    @media screen and (max-width: 768px) {
+      .photo-section .photo {
+        flex: 0 0 45%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .photo-section .photo {
+        flex: 0 0 100%;
+      }
+    }
+    nav {
+      background-color: #f8a3a3;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #800303;
+    }
+    h1 { text-align: center;}
+    h3 { text-align: center;}
+  </style>
+  
+</head>
+<body>
+  <header>
+    <div class="search-form">
+      <input type="text" placeholder="Pesquisar...">
+      <input type="submit" value="Pesquisar">
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Pagina Inicial</a>
+    <a href="parcerias.html">Marcas Parceiras</a>
+  </nav>
+  <main>
+    <h1>Entre em Contato Conosco</h1>
+
+    <footer>
+      <div class="budget-form">
+        <form action="processar_contato.php" method="post">
+          <input type="text" name="nome" placeholder="Nome">
+          <input type="text" name="email" placeholder="E-mail">
+          <textarea name="mensagem" placeholder="Mensagem"></textarea>
+          <input type="submit" value="Enviar Mensagem">
+        </form>
+      </div>
+      <p>Todos os direitos reservados &copy; 2023 Loja Raphael Material de Construção</p>
+    </footer>
+  </main>
+</body>
+</html>

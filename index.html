@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Raphael Materiais de Construção - Página Inicial</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    header {
+      background-color: #494444;
+      color: #fff;
+      padding: 20px;
+    }
+
+    
+    .search-form {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-form input[type="text"] {
+      width: 200px;
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    .search-form input[type="submit"] {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+   
+    .photo-section {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .photo-section .photo {
+      flex: 0 0 20%;
+      margin: 10px;
+    }
+
+    .photo-section .photo img {
+      width: 100%;
+      height: auto;
+    }
+
+  
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .budget-form input[type="text"],
+    .budget-form textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .budget-form input[type="submit"] {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+   
+    @media screen and (max-width: 768px) {
+      .photo-section .photo {
+        flex: 0 0 45%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .photo-section .photo {
+        flex: 0 0 100%;
+      }
+    }
+    nav {
+      background-color: #f8a3a3;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #800303;
+    }
+    h1 { text-align: center;}
+    h3 { text-align: center;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="search-form">
+      <input type="text" placeholder="Pesquisar...">
+      <input type="submit" value="Pesquisar">
+    </div>
+  </header>
+
+  <main>
+    <h1>Bem-vindo à Raphael Materiais de Construção</h1>
+    <h3> Clique nas opçoes abaixo e sabia mais sobre nós!</h3>
+    <nav>
+        <a href="index.html">Pagina Inicial</a>
+        <a href="localizado.html">Onde estamos Localizados</a>
+        <a href="parcerias.html">Marcas Parceiras</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    <div class="photo-section">
+        <div class="row">
+          <div class="photo">
+            <img src="imagem/material1.avif" alt="Material 1">
+          </div>
+          <div class="photo">
+            <img src="imagem/material2.avif" alt="Material 2">
+          </div>
+          <div class="photo">
+            <img src="imagem/material3.avif" alt="Material 3">
+          </div>
+          <div class="photo">
+            <img src="imagem/material4.avif" alt="Material 4">
+          </div>
+          <div class="photo">
+            <img src="imagem/material5.avif" alt="Material 5">
+          </div>
+        </div>
+        <div class="row">
+          <div class="photo">
+            <img src="imagem/material6.avif" alt="Material 6">
+          </div>
+          <div class="photo">
+            <img src="imagem/material7.avif" alt="Material 7">
+          </div>
+          <div class="photo">
+            <img src="imagem/material8.avif" alt="Material 8">
+          </div>
+          <div class="photo">
+            <img src="imagem/material9.avif" alt="Material 9">
+          </div>
+          <div class="photo">
+            <img src="imagem/material10.avif" alt="Material 10">
+          </div>
+        </div>
+        <div class="row">
+          <div class="photo">
+            <img src="imagem/material11.avif" alt="Material 11">
+          </div>
+          <div class="photo">
+            <img src="imagem/material12.avif" alt="Material 12">
+          </div>
+          <div class="photo">
+            <img src="imagem/material13.avif" alt="Material 13">
+          </div>
+          <div class="photo">
+            <img src="imagem/material4.avif" alt="Material 14">
+          </div>
+          <div class="photo">
+            <img src="imagem/material15.avif" alt="Material 14">
+          </div>
+        </div>
+        
+      </div>
+    </main>
+  
+
+  <footer>
+    <div class="budget-form">
+      <form action="processar_orcamento.php" method="post">
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="text" name="email" placeholder="E-mail">
+        <textarea name="mensagem" placeholder="Mensagem"></textarea>
+        <input type="submit" value="Enviar Orçamento">
+      </form>
+    </div>
+    <p>Todos os direitos reservados &copy; 2023 Loja Raphael Material de Construção</p>
+  </footer>
+</body>
+</html>
